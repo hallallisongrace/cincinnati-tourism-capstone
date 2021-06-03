@@ -1,21 +1,19 @@
 import './App.css';
 import './viewattra';
-import './viewattra'
-import './about.css'
-import About from './About'
-import React from 'react'
+import './contact';
+import './about.css';
+import About from './About';
+import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header'; //Include Heder
 import Footer from './footer'; //Include Footer
 
-// function App() {
-//   return (
-//     <div className="App">
-//    <About/>
-//     </div>
-//   );
-// }
+
+
+
+
+
 
 class App extends React.Component {
   
