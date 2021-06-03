@@ -1,5 +1,6 @@
 const router = require('express').Router()
-let Contact = require('../models/contact.model')
+let Contact = require('./contact.model')
+
 
 
 

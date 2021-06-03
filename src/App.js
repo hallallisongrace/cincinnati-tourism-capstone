@@ -1,5 +1,7 @@
 import './App.css';
-import Contact from "./componets/contact";
+import './files/viewattra';
+
+
 function App() {
   return (
     <div className="App">
