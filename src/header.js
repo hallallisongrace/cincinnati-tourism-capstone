@@ -5,7 +5,7 @@ class Header extends React.Component
   render()
   {
     return (
-      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <nav class="navbar navbar-expand-sm bg-light text-dark">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home</a>
@@ -21,9 +21,6 @@ class Header extends React.Component
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">View Attractions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
     </nav>
