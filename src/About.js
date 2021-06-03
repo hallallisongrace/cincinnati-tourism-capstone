@@ -119,13 +119,13 @@ import React, { Component } from 'react'
 import {appendScript} from './random'
 export default class About extends Component {
   
-    componentDidMount() {
-        appendScript('./scroll.js')
-    }
+    // componentDidMount() {
+    //     appendScript('./scroll.js')
+    // }
+    
     
     render() {
         return (
-          
             <div>
                      <div>
             <div id="parallax-world-of-ugg">
@@ -226,6 +226,10 @@ export default class About extends Component {
 
 
   
+
+
+
+
   <section className="text"></section>
   <section id="hero">
     <div id="cincy1"></div>

@@ -151,3 +151,35 @@ p.header6{
 @media screen and (max-width: 479px) {
   #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
 }
+
+
+a.nav-link{
+  color: black !important;
+}
+
+
+
+.navbar{
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+  font-size: 25px; 
+  font-family: Oswald, sans-serif;
+  
+}
+
+.nav-link:hover{
+  color: salmon !important
+}
+
+.links:hover{
+  color: salmon;
+}
+
+
