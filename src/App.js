@@ -1,4 +1,6 @@
 import './App.css';
+import './viewattra';
+import './viewattra'
 import './about.css'
 import About from './About'
 import React from 'react'

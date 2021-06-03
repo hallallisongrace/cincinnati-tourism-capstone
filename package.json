@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@popperjs/core": "^2.9.2",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-script-tag": "^1.1.2",
+    "mongodb": "^3.6.9",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-jsx": "^1.0.0",
     "react-scripts": "4.0.3",
+    "server": "^1.0.33",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -37,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.4"
   }
 }
