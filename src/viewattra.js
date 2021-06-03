@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-// import 'viewattra.css'
+import './App';
+
 
 class Attraction extends Component {
   render() {
@@ -90,4 +91,4 @@ class AttractionCards extends Component {
 
 
 
-export default (Attraction, AttractionCards)
+export default (Attraction, AttractionCards);
