@@ -26,10 +26,7 @@ class App extends React.Component {
     return (
      <div className="maincontainer">
      <Router>
-      <Header></Header>
-      {/* <h1 className="mr-5 mt-5"></h1>
-       <div className="container mb-5 mt-5">
-        <h1 className="mr-5 mt-5"></h1> */}
+      <Header/>
         <Route path='/about' component={About} />
         <Route path='/home' component={Home} />
         <Route path='/contact' component ={Contact} />
