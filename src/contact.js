@@ -1,25 +1,11 @@
-import React from 'react'
-
-export const contact = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-
 import React, { Component } from 'react';
-
-
-
 
 import axios from 'axios';
 // import '../styles/contact.css'
 import Header from './header'; //Include Heder
 import Footer from './footer'; //Include Footer
 
-export default class contact extends Component {
+ class Contact extends Component {
   constructor (props){
     super(props)
     this.onChangeName = this.onChangeName.bind(this);
@@ -129,4 +115,4 @@ export default class contact extends Component {
   }
 }
 
- 
+export default Contact; 

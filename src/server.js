@@ -1,16 +1,36 @@
 const express = require('express');
-const app = express(); 
+const cors = require('cors');
+const mongoose = require('mongoose');
 
-const PORT = provess.env.port || 3000;
 
-// Middleware
-app.use(express.static('public'));
+require('dotenv').config();
 
-app.get('/public/contactform.html', (req, res)=>{
-    res.sendFile(_direname + '/public/contactform.html')
+
+const app = express();
+const port = process.env.PORT || 5000;
+
+
+app.use(cors());
+app.use(express.json());
+
+const uri = process.env.ATLAS_URI;
+        
+mongoose.connect(process.env.MONGODB_URI || 
+  { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true  }
+);
+const connection = mongoose.connection;
+
+
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully");
 })
 
-app.listen(PORT, ()=>{
-console.log(`Server is running on port: ${port}`);
+if(process.env.NODE_ENV === 'production'){
 
-})
+}
+
+
+app.listen(port, () => {
+    
+    console.log(`Server is running on port: ${port}`);
+});

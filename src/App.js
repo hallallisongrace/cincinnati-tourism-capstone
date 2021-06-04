@@ -1,9 +1,10 @@
 import './App.css';
-import './viewattra';
-import './contact';
+import './Contact';
 import './about.css';
 import About from './About';
 import React from 'react';
+import Viewattra from './Viewattra';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header'; //Include Heder
@@ -25,7 +26,8 @@ class App extends React.Component {
        <div className="container mb-5 mt-5">
         <h1 className="mr-5 mt-5"></h1> */}
         <About></About>
-      {/* </div> */}
+      
+{/* </div> */}
 
         <Footer></Footer>
     </div>

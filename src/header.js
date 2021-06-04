@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class Header extends React.Component
-{
+class Header extends React.Component{
   render()
   {
     return (
@@ -26,8 +26,13 @@ class Header extends React.Component
         </li>
       </ul>
     </nav>
-      
     )
   }
 }
+
+
+
+  
+
+
 export default Header;
