@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class Header extends React.Component
-{
+class Header extends React.Component{
   render()
   {
     return (
-      <nav class="navbar navbar-expand-sm bg-light text-dark">
+      <nav class="navbar navbar-expand-sm bg-light">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home</a>
@@ -26,8 +26,13 @@ class Header extends React.Component
         </li>
       </ul>
     </nav>
-      
     )
   }
 }
+
+
+
+  
+
+
 export default Header;

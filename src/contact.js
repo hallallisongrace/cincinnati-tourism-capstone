@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import axios from 'axios';
+// import '../styles/contact.css'
+import Header from './header'; //Include Heder
+import Footer from './footer'; //Include Footer
 
-
-
-export default class contact extends Component {
+ class Contact extends Component {
   constructor (props){
     super(props)
     this.onChangeName = this.onChangeName.bind(this);
@@ -39,11 +41,10 @@ export default class contact extends Component {
       question: this.state.question,
     }
     console.log(contact)
-    axios.post(BACKEND_URL + 'contact/add', contact)
+    // axios.post(BACKEND_URL + 'contact/add', contact)
     .then((res)=>{
       console.log(res.data)
     })
-    // window.location="/"
     this.setState({
         name: '',
         email: '',
@@ -55,7 +56,7 @@ export default class contact extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
+        <Header></Header>
       <div className="contactContainerReturn">
           <h3 className='text-center'>Contact Us</h3>
           <div className="containerContact">
@@ -105,13 +106,13 @@ export default class contact extends Component {
             </form>
             </div>
             <div className="content">
-              <img className="contactClock" src={clock}></img>
-            </div>
+\            </div>
           </div>
       </div>
+      <Footer></Footer>
       </div>
     )
   }
 }
 
- 
+export default Contact; 

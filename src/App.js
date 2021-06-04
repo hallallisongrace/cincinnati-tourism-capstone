@@ -1,9 +1,10 @@
 import './App.css';
-import './viewattra';
-import './viewattra'
-import './about.css'
-import About from './About'
-import React from 'react'
+import './Contact';
+import './about.css';
+import About from './About';
+import React from 'react';
+import Viewattra from './Viewattra';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header'; //Include Heder
@@ -11,13 +12,11 @@ import Footer from './footer'; //Include Footer
 import Home from './home';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
-// function App() {
-//   return (
-//     <div className="App">
-//    <About/>
-//     </div>
-//   );
-// }
+
+
+
+
+
 
 class App extends React.Component {
   
