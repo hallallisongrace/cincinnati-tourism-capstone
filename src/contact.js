@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // import axios from 'axios';
 // import '../styles/contact.css'
-import Header from './header'; //Include Heder
+import Header from './navbar'; //Include Heder
 import Footer from './footer'; //Include Footer
 
  class Contact extends Component {

@@ -1,4 +1,5 @@
 import React from 'react';// import css from '../'
+import './home.css'
 import coffeeShop from './assets/coffeeShop.jpg';
 import trees from './assets/trees.jpg';
 import woman from './assets/woman.jpg';
@@ -10,7 +11,7 @@ import church from './assets/church.jpg';
 
 const home = () => {
     return (
-     <div>
+     <div id='body'>
   <section className="container-fluid position-relative mb-5">
   <h1 className="position-absolute top-50 start-50 translate-middle text-light">WELCOME <br />TRAVEL WITH US</h1>
   </section>

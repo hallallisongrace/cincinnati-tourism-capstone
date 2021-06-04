@@ -4,7 +4,7 @@ import './Viewattrac.css';
 
 
 
-import Header from './header'; //Include Heder
+import Header from './navbar'; //Include Heder
 import Footer from './footer'; //Include Footer
 
 
@@ -12,7 +12,7 @@ class Attraction extends Component {
   render() {
     return(
 
-      <div className="main">
+      <div className="main" id='attr-background'>
 
         <div className="attraction-card">
           <div className="card-body">
