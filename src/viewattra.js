@@ -4,7 +4,7 @@ import './Viewattrac.css';
 
 
 
-import Header from './header'; //Include Heder
+import Header from './navbar'; //Include Heder
 import Footer from './footer'; //Include Footer
 
 

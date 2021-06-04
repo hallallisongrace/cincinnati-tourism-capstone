@@ -5,12 +5,6 @@ import './about.css';
 
 // import {appendScript} from './random'
 export default class About extends Component {
-  
-    // componentDidMount() {
-    //     appendScript('./scroll.js')
-    // }
-    
-    
     render() {
         return (
             <div>
