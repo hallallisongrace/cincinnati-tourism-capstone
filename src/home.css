@@ -9,6 +9,10 @@ body{
 /* .skewed{
     transform: translate(200px);
 } */
+section:first-of-type{
+    background-image:url('./assets/triangle.jpg');
+    background-size: cover;
+}
 section{
     max-height: 100vh;
     height:100vh;
