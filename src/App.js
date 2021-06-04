@@ -3,7 +3,8 @@ import './Contact';
 import './about.css';
 import About from './About';
 import React from 'react';
-import Viewattra from './Viewattra';
+import './Viewattra';
+import './server';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
