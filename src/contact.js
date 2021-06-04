@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import axios from 'axios';
+// import axios from 'axios';
 // import '../styles/contact.css'
 import Header from './header'; //Include Heder
 import Footer from './footer'; //Include Footer
@@ -56,7 +56,6 @@ import Footer from './footer'; //Include Footer
   render() {
     return (
       <div>
-        <Header></Header>
       <div className="contactContainerReturn">
           <h3 className='text-center'>Contact Us</h3>
           <div className="containerContact">
@@ -106,10 +105,9 @@ import Footer from './footer'; //Include Footer
             </form>
             </div>
             <div className="content">
-\            </div>
+          </div>
           </div>
       </div>
-      <Footer></Footer>
       </div>
     )
   }
