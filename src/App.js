@@ -24,15 +24,12 @@ class App extends React.Component {
     return (
      <div className="maincontainer">
      <Router>
-      <Header></Header>
-      {/* <h1 className="mr-5 mt-5"></h1>
-       <div className="container mb-5 mt-5">
-        <h1 className="mr-5 mt-5"></h1> */}
-        <Route path='/about' component={About} />
-        <Route path='/' component={Home} />
-      {/* </div> */}
+      <Header/>
+      <Route path='/about' component={About} />
+      <Route path='/home' component={Home} />
+       
 
-        <Footer />
+        {/* <Footer /> */}
         </Router>
     </div>
    )

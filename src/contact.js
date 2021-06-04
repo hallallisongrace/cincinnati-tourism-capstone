@@ -56,7 +56,7 @@ import Footer from './footer'; //Include Footer
   render() {
     return (
       <div>
-        <Header></Header>
+        <Header/>
       <div className="contactContainerReturn">
           <h3 className='text-center'>Contact Us</h3>
           <div className="containerContact">
