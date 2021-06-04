@@ -42,13 +42,16 @@ import Footer from './footer'; //Include Footer
     }
     console.log(contact)
     // axios.post(BACKEND_URL + 'contact/add', contact)
-    .then((res)=>{
-      console.log(res.data)
-    })
+    fetch(contact).then((response) => {
+      console.log(response);
+      response.json().then((data) => {
+          console.log(data);
+      });
+  });
     this.setState({
         name: '',
         email: '',
-        question: ''
+        message: ''
     })
     window.alert('Thank you for your inquiry')
     console.log(contact)

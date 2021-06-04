@@ -1,3 +1,17 @@
-body{
-    background-color: black;
+.attraction-h2{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    text-align: center 
 }
+
+.img{
+    box-shadow: 0 0 10px 5px;
+    margin-left: 350px;
+    width: 50%;
+}
+
+.attraction-card{
+    background-image: url(https://3nwec1qd4zy21zftr339bla3-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/03_Smale-Riverfront-Park_website-1800x1196.jpg);
+    background-repeat: no-repeat;
+}
+
+

@@ -1,7 +1,9 @@
 
-import React, { Component } from 'react'
- import './about.css';
+import React, { Component } from 'react';
+import './about.css';
 
+
+// import {appendScript} from './random'
 export default class About extends Component {
     render() {
         return (
@@ -102,12 +104,6 @@ export default class About extends Component {
    </div>
    </section>
  
-
-
-  
-
-
-
 
   <section className="text"></section>
   <section id="hero">

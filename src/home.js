@@ -1,5 +1,5 @@
-import React from 'react';// import css from '../'
-import './home.css'
+import React, { Component } from 'react';
+import './home.css';
 import coffeeShop from './assets/coffeeShop.jpg';
 import trees from './assets/trees.jpg';
 import woman from './assets/woman.jpg';
