@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Viewattrac.css';
+
+
 
 import Header from './header'; //Include Heder
 import Footer from './footer'; //Include Footer
+
 
 class Attraction extends Component {
   render() {
     return(
 
       <div className="main">
-          <Header></Header>
 
         <div className="attraction-card">
           <div className="card-body">
@@ -20,7 +23,6 @@ class Attraction extends Component {
             <a href={this.props.link} target="_blank" rel="noreferrer"><div className="button">{this.props.btn}</div></a>
           </div>
         </div>
-        <Footer></Footer>
 
       </div>
   
@@ -39,12 +41,12 @@ class AttractionCards extends Component {
       </div>
       <div className='cards'>
         <Attraction
-         img=''
+         img='https://cincinnatiusa.com/sites/default/files/styles/Array/public/attractionphotos/Union%20Terminal%20Robert%20Webber.jpg'
          title='Cincinnati Museum Center'
-         paragraph='https://cincinnatiusa.com/sites/default/files/styles/Array/public/attractionphotos/Union%20Terminal%20Robert%20Webber.jpg'
+         paragraph=''
          stars='4.5/5 stars'
          btn='Visit Website'
-         link='https://www.cincymuseum.org/' />
+         link='https://www.cincymuseum.org/'/>
         <Attraction
          img='https://media.bizj.us/view/img/11205915/artmuseum*1200xx1800-1013-0-94.jpg'
          title='Taft Art Museum '
