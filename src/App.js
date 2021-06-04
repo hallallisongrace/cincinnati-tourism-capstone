@@ -1,11 +1,10 @@
 import './App.css';
-import './Contact';
+import './contact';
 import './about.css';
+import './home.css';
 import About from './About';
 import React from 'react';
 import Viewattra from './Viewattra';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header'; //Include Heder
 import Footer from './footer'; //Include Footer
