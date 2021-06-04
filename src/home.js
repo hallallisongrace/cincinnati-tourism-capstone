@@ -1,4 +1,4 @@
-import React from 'react';// import css from '../'
+import React, { Component } from 'react';
 import './home.css';
 import coffeeShop from './assets/coffeeShop.jpg';
 import trees from './assets/trees.jpg';
@@ -11,7 +11,7 @@ import church from './assets/church.jpg';
 
 const home = () => {
     return (
-     <div>
+     <div class="home">
   <section className="container-fluid position-relative mb-5">
   <h1 className="position-absolute top-50 start-50 translate-middle text-light">WELCOME <br />TRAVEL WITH US</h1>
   </section>

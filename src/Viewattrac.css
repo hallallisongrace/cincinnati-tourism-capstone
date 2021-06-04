@@ -1,77 +1,17 @@
-.attractionsCard {
-    width: 600px;
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: column;
-    margin-right: 5vw;
-    margin-bottom: 5vh;
-    background: #E0E6EB;
-}
-.attractionsCard:hover {
-    transform: scale(1.1);
-    /* box-shadow: 2px 2px 2px black; */
-}
-.cardImage {
-    width: 100%;
-}
-.attractionImage {
-    width: 90%;
-    height: 40vh;
-}
-.attractionsHeader {
-    margin-top: 20vh;
-    font-size: 50px;
-    text-shadow: 3px 3px 3px #C6011F;
-}
-.text-name {
-    font-size: 25px;
-    font-weight: bold;
-    color: #C6011F;
-}
-.link-details {
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-}
-.link-site {
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-}
-.link-details:hover {
-    color: blue;
-    text-decoration: underline;
-}
-.link-site:hover {
-    color: blue;
-    text-decoration: underline;
-}
-.attractionsInnerContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-@media screen and (max-width:700px) {
-    .attractionsHeader{
-        font-size: 45px;
-    }
-    .text-name {
-        font-size: 20px;
-    }
-    .link-details {
-        font-size: 20px;
-    }
-    .link-site {
-        font-size: 20px;
-    }
-    .attractionsCard {
-        width: 500px;
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
+.attraction-h2{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    text-align: center 
 }
 
+.img{
+    box-shadow: 0 0 10px 5px;
+    margin-left: 350px;
+    width: 50%;
+}
 
+.attraction-card{
+    background-image: url(https://3nwec1qd4zy21zftr339bla3-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/03_Smale-Riverfront-Park_website-1800x1196.jpg);
+    background-repeat: no-repeat;
+}
 
 
