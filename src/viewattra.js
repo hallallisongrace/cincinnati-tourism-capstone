@@ -16,7 +16,7 @@ class Attraction extends Component {
 
         <div className="attraction-card">
           <div className="card-body">
-            <img alt="" src={this.props.img}/>
+            <img alt="" src={this.props.img} />
             <h2 className="attraction-h2">{this.props.title}</h2>
             <p className="attraction-p">{this.props.paragraph}.</p>
             <h5 className="attraction-h5">{this.props.stars}</h5>

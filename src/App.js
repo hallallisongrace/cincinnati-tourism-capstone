@@ -1,18 +1,14 @@
-import './App.css';
-import Contact from './Contact';
-import './about.css';
-import './home.css';
-import About from './About';
 import React from 'react';
+import './App.css';
+import Contact from './contact.js';
+import About from './About.js';
 import './server';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header'; //Include Heder
 import Footer from './footer'; //Include Footer
-import Home from './home';
+import Home from './home.js';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Viewattra from './Viewattra';
+import Viewattra from './viewattra';
 
 
 
@@ -30,7 +26,7 @@ class App extends React.Component {
         <Route path='/about' component={About} />
         <Route path='/home' component={Home} />
         <Route path='/contact' component ={Contact} />
-g
+
         <Route path='/attractions' component ={Viewattra} />
         
       {/* </div> */}
