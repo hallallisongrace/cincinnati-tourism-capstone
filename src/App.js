@@ -32,12 +32,11 @@ class App extends React.Component {
         <Route path='/about' component={About} />
         <Route path='/home' component={Home} />
         <Route path='/contact' component ={Contact} />
-
         <Route path='/attractions' component ={Viewattra} />
         
       {/* </div> */}
 
-        <Footer />
+        <Footer></Footer>
         </Router>
     </div>
    )
