@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Viewattrac.css';
+
+
 
 import Header from './header'; //Include Heder
 import Footer from './footer'; //Include Footer
+
 
 class Attraction extends Component {
   render() {
     return(
 
       <div className="main">
-          <Header></Header>
 
         <div className="attraction-card">
           <div className="card-body">
@@ -20,7 +23,6 @@ class Attraction extends Component {
             <a href={this.props.link} target="_blank" rel="noreferrer"><div className="button">{this.props.btn}</div></a>
           </div>
         </div>
-        <Footer></Footer>
 
       </div>
   

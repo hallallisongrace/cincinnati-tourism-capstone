@@ -116,7 +116,7 @@
 //     )
 // }
 import React, { Component } from 'react'
-import {appendScript} from './random'
+// import {appendScript} from './random'
 export default class About extends Component {
   
     // componentDidMount() {
