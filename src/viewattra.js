@@ -44,12 +44,6 @@ class AttractionCards extends Component {
 
 
 
- <section>
-<div className="parallax">
-<h2>Attractions in the Queen</h2>
-</div>
-</section> 
-
 
     </div>
 
