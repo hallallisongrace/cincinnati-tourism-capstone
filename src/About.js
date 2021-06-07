@@ -19,7 +19,8 @@ export default class About extends Component {
   
   <section>
       <div className="parallax-one">
-        <h2>The Queen of the West</h2>
+        <h2>Welcome Home</h2>
+        <h2>Love, Cincy</h2>
       </div>
   </section>
   
@@ -29,7 +30,7 @@ export default class About extends Component {
   <section>
     <div className="block">
       <p className="header1">A Gem of the Midwest</p>
-      <p className="text1">Cincinnati has much to offer. We'll sing her praises forever.</p>
+      <p className="text1">Cincinnati has so much to offer. We can't stop talking about her.</p>
 
       
     </div>
@@ -54,7 +55,7 @@ export default class About extends Component {
     </div>
   </section>
   <div className="block">
-    <p className="header3">Let's Go Down to the River</p>
+    <p className="header3">Down to the River to Play</p>
     <p>Cincinnati has beautiful riverfront parks, walkable paths, fun businesses and attractions, and amazing views on the banks of the Ohio River. Enjoy the cool breezes, open air, and some of the best sights Cincinnati has to offer.</p>
   <section>
      
@@ -84,7 +85,7 @@ export default class About extends Component {
   </section>
   <section>
   <div className="block">
-    <p className="header3">Take Me Out to the Ball Game</p>
+    <p className="header3">Hey, Batter Batter</p>
     <p>Home of the first professional baseball team, the Cincinnati Reds, as well as the Bengals professional football and FC Cincinnati soccer, in addition to our numerous college teams, Cincinnati is ideal for the sports lover.</p>
   </div>
  
@@ -104,6 +105,20 @@ export default class About extends Component {
    </div>
    </section>
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <section className="text"></section>
   <section id="hero">
