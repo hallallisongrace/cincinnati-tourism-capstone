@@ -1,11 +1,9 @@
 //import './App.css';
-import Contact from './Contact';
+import Contact from './contact';
 import About from './About';
 import React from 'react';
 import './App.css';
 import './server';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './footer'; //Include Footer
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,10 +11,8 @@ import Header from './navbar'; //Include Heder
 // import Footer from './footer'; //Include Footer
 import Home from './home';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Viewattra from './Viewattra';
+import Viewattra from './viewattra';
 import Burger from './components/Burger/Burger';
-
-
 
 
 class App extends React.Component {
