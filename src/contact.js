@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
+
 // import axios from 'axios';
-// import '../styles/contact.css'
+import './contact.css';
+
+
 import Header from './navbar'; //Include Heder
-import Footer from './footer'; //Include Footer
+import Footer from './footer'; 
 
  class Contact extends Component {
   constructor (props){
@@ -53,14 +56,19 @@ import Footer from './footer'; //Include Footer
         email: '',
         message: ''
     })
-    window.alert('Thank you for your inquiry')
+    window.alert('Thank you sending us a message')
     console.log(contact)
   }
   render() {
     return (
+  
       <div>
-      <div className="contactContainerReturn">
-          <h3 className='text-center'>Contact Us</h3>
+      <div className="body3">
+      <div className="titlecontact">
+          <h3 className='text-center'>Let's Chat!</h3>
+          <h4>Leave us a message below</h4>
+
+</div>
           <div className="containerContact">
             <div className="contentContact">
             <form onSubmit={this.onSubmit}>
@@ -74,8 +82,7 @@ import Footer from './footer'; //Include Footer
                   onChange={this.onChangeName}
                   >
                   </input>
-              </div>
-              <div className="form-group">
+             
                   <label>Email:</label>
                   <input
                   type="email"
@@ -85,16 +92,15 @@ import Footer from './footer'; //Include Footer
                   onChange={this.onChangeEmail}
                   >
                   </input>
-              </div>
-              <div className="form-group">
-                <label>Questions and Comments:</label>
+            
+                <label>Messages:</label>
                   <textarea
                   type="text"
                   className="form-control"
                   value={this.state.question}
                   onChange={this.onChangeQuestion}
                   rows='5'
-                  cols='10'
+                  cols='8'
                   >
                   </textarea>
               </div>
@@ -104,16 +110,21 @@ import Footer from './footer'; //Include Footer
                   value="Send"
                   className="btn btn-primary"
                   />
-              </div>
+              </div>  
             </form>
+            </div>
             </div>
             <div className="content">
           </div>
           </div>
       </div>
-      </div>
+
+
+
     )
   }
 }
+
+
 
 export default Contact; 

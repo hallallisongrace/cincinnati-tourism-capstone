@@ -14,13 +14,13 @@ class Header extends React.Component{
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/Contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Add Attractions</a>
+          <a class="nav-link" href="">Add Attractions</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./attractions">View Attractions</a>

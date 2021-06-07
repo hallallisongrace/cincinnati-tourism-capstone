@@ -7,7 +7,7 @@ import ocean from './assets/ocean.jpg';
 import paris from './assets/paris.jpg';
 import beach from './assets/beach.jpg';
 import church from './assets/church.jpg';
-import Weather from './app_component/weather.component';``
+// import Weather from './app_component/weather.component';``
 
 
 const home = () => {

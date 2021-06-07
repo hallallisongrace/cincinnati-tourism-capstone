@@ -8,7 +8,7 @@
 }
  .skewed{
     transform: translate(200px);
-} */
+} 
 #section:first-of-type{
     background-image:url('./assets/triangle.jpg');
     background-size: cover;
