@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { default: Viewattra } = require('../Viewattra');
 const Schema = mongoose.Schema
 const locationSchema = new Schema({
     address: {
@@ -32,13 +33,7 @@ const attractionSchema = new Schema({
     location: {
         type: locationSchema
     },
-    indoors: {
-        type: Boolean
-    },
-    childFriendly: {
-        type: Boolean
-    }
 })
 
 const Attraction = mongoose.model('Attraction', attractionSchema)
-module.exports = Attraction
+module.exports = Viewattra

@@ -7,12 +7,13 @@ import './server';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './footer'; //Include Footer
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './navbar'; //Include Heder
 // import Footer from './footer'; //Include Footer
 import Home from './home';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Viewattra from './Viewattra';
 import Burger from './components/Burger/Burger';
+import addAttract from './addAttract';
+
 
 
 class App extends React.Component {
@@ -26,7 +27,8 @@ class App extends React.Component {
         <Route exact path='/about' component={About} />
         <Route exact path='/home' component={Home} />
         <Route exact path='/Contact' component ={Contact} />
-        <Route path='/attractions' component ={Viewattra} />
+        <Route exact path='/attractions' component ={Viewattra} />
+        <Route exact path ='./add' component={addAttract}/>
 
         
       {/* </div> */}

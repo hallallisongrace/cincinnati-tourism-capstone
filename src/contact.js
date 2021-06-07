@@ -64,58 +64,73 @@ import Footer from './footer';
   
       <div>
       <div className="body3">
+      <form id='contact-form' onSubmit={this.onSubmit}>
       <div className="titlecontact">
           <h3 className='text-center'>Let's Chat!</h3>
           <h4>Leave us a message below</h4>
 
 </div>
           <div className="containerContact">
-            <div className="contentContact">
-            <form onSubmit={this.onSubmit}>
-              <div className="form-group">
-                <label>Name: </label>
-                <input
-                  type="text"
-                  required
-                  className="form-control"
+          <div class="container">
+  <div class="row header">
+    <h1>CONTACT US</h1>
+    <h3>Fill out the form below to learn more!</h3>
+  </div>
+  <div class="row body">
+    <form action="#">
+      <ul>
+        
+        <li>
+          <p class="left">
+            <label for="first_name">first name</label>
+            <input type="text" name="first_name" placeholder="John"
+               className="form-control"
                   value={this.state.name}
                   onChange={this.onChangeName}
-                  >
-                  </input>
-             
-                  <label>Email:</label>
-                  <input
-                  type="email"
-                  required
-                  className="form-control"
-                  value={this.state.email}
-                  onChange={this.onChangeEmail}
-                  >
-                  </input>
-            
-                <label>Messages:</label>
-                  <textarea
-                  type="text"
-                  className="form-control"
-                  value={this.state.question}
-                  onChange={this.onChangeQuestion}
-                  rows='5'
-                  cols='8'
-                  >
-                  </textarea>
-              </div>
-              <div className="form-group">
-                  <input
-                  type="submit"
-                  value="Send"
-                  className="btn btn-primary"
-                  />
-              </div>  
-            </form>
-            </div>
+ />
+          </p>
+        
+          <p class="pull-right">
+            <label for="last_name">last name</label>
+            <input type="text" name="last_name" placeholder="Smith"                   className="form-control"
+                  value={this.state.name}
+                  onChange={this.onChangeName}
+/>      
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <label for="email">email <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="john.smith@gmail.com" />
+          </p>
+        </li>        
+        <li><div class="divider"></div></li>
+        <li>
+          <label for="comments">comments</label>
+          <textarea cols="46" rows="3" name="comments"                   className="form-control"
+                  value={this.state.name}
+                  onChange={this.onChangeName}
+></textarea>
+        </li>
+        
+        <li>
+          <input class="btn btn-submit" type="submit" value="Submit" />
+          <small>or press <strong>enter</strong></small>
+        </li>
+        
+      </ul>
+    </form>  
+  </div>
+</div>
+
             </div>
             <div className="content">
+
+    
+  
           </div>
+          </form>
           </div>
       </div>
 
@@ -124,6 +139,7 @@ import Footer from './footer';
     )
   }
 }
+
 
 
 
