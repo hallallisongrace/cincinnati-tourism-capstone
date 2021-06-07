@@ -44,11 +44,11 @@ class AttractionCards extends Component {
 
 
 
-{/* <section>
+ <section>
 <div className="parallax">
 <h2>Attractions in the Queen</h2>
 </div>
-</section> */}
+</section> 
 
 
     </div>

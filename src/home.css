@@ -1,6 +1,6 @@
 #body{
     height: 2000px;
-     background-image: url('https://64.media.tumblr.com/97cf49f13451b54db8b67157d5c51398/tumblr_n2k84vCX2L1qex6jlo1_500.gif'); 
+    background-image: url('https://64.media.tumblr.com/97cf49f13451b54db8b67157d5c51398/tumblr_n2k84vCX2L1qex6jlo1_500.gif'); 
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: contain;
@@ -11,11 +11,9 @@
 } 
 #section:first-of-type{
     background-image:url('./assets/triangle.jpg');
+    max-height: 100vh;
+    height:100vh;
     background-size: cover;
 }
 
-#section{
-    max-height: 100vh;
-    height:100vh;
-} 
 
