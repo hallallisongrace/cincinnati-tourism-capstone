@@ -109,7 +109,18 @@ export default class About extends Component {
 
 
 
-
+   <section>
+      <div className="parallax-seven">
+        <h2>Cincinnati Is For Lovers</h2>
+      </div>
+  </section>
+  <section>
+  <div className="block">
+      <p className="header3">Romantic Getaways and Wedding Destinations</p>
+      <p>Make memories for a lifetime here in Cincinnati. With wedding venues to suit all tastes and scenic locations for photographs, Cincinnati is perfect for your dream wedding. Want to get away from it all with your special someone? Look no further than here.</p>
+   </div>
+   </section>
+ 
 
 
 
