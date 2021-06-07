@@ -1,0 +1,43 @@
+h3#kable-title{
+    
+    font-size: 15px;
+    color: navy;
+    font-family: Oswald, sans-serif;
+}
+
+h3#dom-title {
+    font-size: 10px;
+    color: navy;
+    font-family: Oswald, sans-serif;
+}
+
+h3#phil-title{
+    font-size: 10px;
+    color: navy;
+    font-family: Oswald, sans-serif;
+}
+
+h3#all-title{
+    font-size: 10px;
+    color: navy;
+    font-family: Oswald, sans-serif;
+}
+
+footer.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Oswald, sans-serif;
+}
+
+div.footer-row {
+    display:flex;
+    flex-direction: row;
+}
+
+footer.footer-column{
+    background-color: #fadadd;
+    color: navy;
+    font-family: Oswald, sans-serif;
+}
+
