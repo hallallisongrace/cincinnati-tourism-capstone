@@ -11,11 +11,14 @@ import 'weather-icons/css/weather-icons.css';
 // IMPORTS ABOVE ARE FOR WEATHER APP ^
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './footer'; //Include Footer
-import Header from './navbar'; //Include Heder
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Footer from './footer'; //Include Footer
 import Home from './home';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Viewattra from './Viewattra';
 import Burger from './components/Burger/Burger';
+import addAttract from './addAttract';
+
 
 
 // for weather app
@@ -115,9 +118,13 @@ class App extends React.Component {
       <div className="maincontainer">
         <Burger/>
         <Route exact path='/about' component={About} />
-          <Route exact path='/home' component={Home} />
-          <Route exact path='/Contact' component ={Contact} />
-          <Route path='/attractions' component ={Viewattra} />
+        <Route exact path='/home' component={Home} />
+        <Route exact path='/Contact' component ={Contact} />
+        <Route exact path='/attractions' component ={Viewattra} />
+        <Route exact path ='./add' component={addAttract}/>
+
+        
+      {/* </div> */}
 
           <Route path='/weather' render={() =>
             <div>
@@ -125,7 +132,7 @@ class App extends React.Component {
               <Weather city={this.state.city} country={this.state.country} temp_celsius={this.state.temp_celsius} temp_min={this.state.temp_min} temp_max={this.state.temp_max} description={this.state.description} weatherIcon={this.state.icon} />
             </div>
           } />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
 

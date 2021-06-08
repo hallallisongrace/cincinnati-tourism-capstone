@@ -1,7 +1,7 @@
 // const express = require('express');
 // const nodemailer = require('nodemailer');
 // const cors = require('cors');
-// const { getMaxListeners }  = require('./models/contact');
+// const { getMaxListeners }  = require('./models/model.contact');
 // require("dotenv").config();
 // const mongoose = require('mongoose');
 
@@ -56,27 +56,31 @@
 
 // app.use(express.json());
 
-// // const dbURI = 'mongodb+srv://dshelby24:password24@cluster0.6yrbz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'; mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
-// //   .then((result) => app.listen(3000))
-// //   .catch((err) => console.log(err));
+// const dbURI = 'mongodb+srv://dshelby24:password24@cluster0.6yrbz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'; mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
+//   .then((result) => app.listen(3000))
+//   .catch((err) => console.log(err));
 
 
-// // const uri = process.env.ATLAS_URI;
+// const uri = process.env.ATLAS_URI;
         
-// // mongoose.connect(process.env.ATLAS_URI|| 
-// //   { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true  }
-// // );
-// // // const connection = mongoose.connection;
+// mongoose.connect(process.env.ATLAS_URI|| 
+//   { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true  }
+// );
+// // const connection = mongoose.connection;
 
 
-// // connection.once('open', () => {
-// //   console.log("MongoDB database connection established successfully");
-// // })
+// connection.once('open', () => {
+//   console.log("MongoDB database connection established successfully");
+// })
 
 // if(process.env.NODE_ENV === 'production'){
 
 // }
+// const attractionsRouter = require('./routes/route.attraction')
+// const contactRouter = require('./routes/route.contact')
 
+// app.use('/attractions', attractionsRouter)
+// app.use('/contact', contactRouter)
 
 // app.listen(port, () => {
     
