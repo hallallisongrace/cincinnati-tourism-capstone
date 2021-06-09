@@ -14,15 +14,50 @@ h3#all-title{
     font-family: Oswald, sans-serif;
 }
 
-footer.footer-column {
+footer.footer-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-family: Oswald, sans-serif;
 }
 
 div.footer-row {
     display:flex;
-    flex-direction: row;
+    flex-direction: row
 }
 
+.nav-item{
+    font-size: 15px;
+    flex-direction: row;
+    
+}
+
+.legalinfo{
+    font-size: 10px;
+}
+
+div.footer-columns {
+    display: flex;
+    justify-content: center
+
+}
+
+div.footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.legalinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.socialmediaicons{
+    justify-content: center;
+}

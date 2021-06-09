@@ -10,5 +10,8 @@
     "eject": "react-scripts eject"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-scripts": "^4.0.3"
+  }
 }
