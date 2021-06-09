@@ -3,6 +3,9 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './addattractions.css';
 import {BACKEND_URL} from './config';
+import { withRouter } from 'react-router-dom'
+
+
 
 
 
@@ -27,12 +30,6 @@ class addAttract extends Component {
             description: "",
             website: "",
             imageURL: "",
-            location: {
-                address: "",
-                city: "",
-                state: "",
-                zipcode: ""
-            },
             indoors: 0,
             childFriendly: 0
         }
@@ -107,17 +104,13 @@ class addAttract extends Component {
             website: this.state.website,
             imageURL: this.state.imageURL,
             location: this.state.location,
-            address: this.state.location.address,
-            city: this.state.location.city,
-            state: this.state.location.state,
-            zipcode: this.state.location.zipcode,
             indoors: this.state.indoors,
             childFriendly: this.state.childFriendly
         }
         console.log(BACKEND_URL + 'attractions/add', attraction)
         axios.post(BACKEND_URL + 'attractions/add', attraction)
         .then(res => console.log(res.data));
-        this.props.history.push('/viewattrac');
+        this.props.history.push('/attractions');
        console.log(attraction)
     };
     render() {
@@ -154,34 +147,6 @@ class addAttract extends Component {
                             </input>
                         </div>
                         <div className="form-group">
-                            <label>Street Address: </label>
-                            <input type='text' required 
-                            className='form-control' 
-                            value={this.state.location.address} onChange={this.onChangeAddress}>
-                            </input>
-                        </div>
-                        <div className="form-group">
-                            <label>City: </label>
-                            <input type='text' required 
-                            className='form-control' 
-                            value={this.state.location.city} onChange={this.onChangeCity}>
-                            </input>
-                        </div>
-                        <div className="form-group">
-                            <label>State: </label>
-                            <input type='text' required 
-                            className='form-control' 
-                            value={this.state.location.state} onChange={this.onChangeState}>
-                            </input>
-                        </div>
-                        <div className="form-group">
-                            <label>Zipcode: </label>
-                            <input type='text' required
-                             className='form-control' 
-                            value={this.state.location.zipcode} onChange={this.onChangeZipcode}>
-                            </input>
-                        </div>
-                        <div className="form-group">
                             <label>Indoors: </label>
                             <div className="select-style">
                             <select required 
@@ -215,4 +180,4 @@ class addAttract extends Component {
     }
 }
 
-export default addAttract;
+export default withRouter (addAttract);

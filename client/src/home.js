@@ -1,9 +1,9 @@
-// import React, { Component } from 'react';
-import React from  'react';
+import React, { Component } from 'react';
+// import React from 'React';
 import './home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // IMPORTS BELOW ARE FOR WEATHER APP 
-import Weather from './app_component/weather.component'
+// import Weather from './app_component/weather.component'
 import 'weather-icons/css/weather-icons.css';
 // IMPORTS ABOVE ARE FOR WEATHER APP ^
 // for weather app

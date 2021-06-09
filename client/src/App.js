@@ -3,19 +3,20 @@ import React, { Component } from 'react';
 import Contact from './contact';
 import About from './About';
 import './App.css';
-// import './server';
+import 'weather-icons/css/weather-icons.css';
+// IMPORTS ABOVE ARE FOR WEATHER APP ^
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './footer'; //Include Footer
 // import 'bootstrap/dist/css/bootstrap.min.css';
-// import Footer from './footer'; //Include Footer
 import Home from './home';
 
 
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Viewattra from './Viewattra';
 import addAttract from './addAttract';
-// import Burger from './components/Burger/Burger';
-
+import Burger from './components/Burger/Burger';
+import SingleAttraction  from './singleatt';
+import afteradd from './afteradd';
 
 
 
@@ -33,6 +34,9 @@ class App extends React.Component {
         <Route exact path='/Contact' component ={Contact}/>
         <Route exact path='/attractions' component ={Viewattra}/>        
         <Route exact path ='/add' component= {addAttract}/>
+        <Route exact path = '/attractions/:id' component={SingleAttraction}/>
+        <Route exact path = '/after' component={afteradd}/>
+
 
 
 

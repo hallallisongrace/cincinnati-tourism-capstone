@@ -12,16 +12,12 @@ router.route('/').get((req, res) => {
   router.route('/add').post((req, res) => {
     const name = req.body.name;
     const description = req.body.description;
-    const address = req.body.address;
-    const zipcode = Number(req.body.zipcode);
     const website = req.body.website;
     const imageUrl = req.body.imageUrl;
 
     const newAttraction = new Attraction({
         name,
         description,
-        address,
-        zipcode,
         website,
         imageUrl
     });
@@ -49,16 +45,14 @@ router.route('/update/:id').post((req, res) => {
   .then(attraction => {
       attraction.name = req.body.name;
       attraction.description = req.body.description;
-      attraction.address = req.body.address;
-      attraction.zipcode = Number(req.body.zipcode);
       attraction.website = req.body.website;
       attraction.imageUrl = req.body.imageUrl;
 
       attraction.save()
       .then(() => res.json('Attraction updated!'))
-      .catch(err => res.status(400).json('Error: ' +err));
+      .catch(err => res.status(400).json('Error: ' + err));
   })
-  .catch(err => res.status(400).json('Error: ' +err))
+  .catch(err => res.status(400).json('Error: ' + err))
 })
   
   module.exports = router;
