@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import './contact.css';
-import Header from './navbar'; //Include Heder
-import Footer from './footer'; 
+import {BACKEND_URL} from './config';
 
+ 
  class Contact extends Component {
   constructor (props){
     super(props)
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
-    this.onChangeQuestion = this.onChangeQuestion.bind(this);
+    this.onChangeMessage = this.onChangeMessage.bind(this);
+    this.onChangePhone = this.onChangePhone.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.state = {
         name: " ",
         email: " ",
-        question: " ",
-      }
+        messahe: " ",
+        phone: " ",
+      } 
     }
 
 
@@ -30,7 +32,12 @@ import Footer from './footer';
       email: e.target.value
     })
   }
-  onChangeQuestion(e){
+  onChangeMessage(e){
+    this.setState({
+      question: e.target.value
+    })
+  }
+  onChangePhone(e){
     this.setState({
       question: e.target.value
     })
@@ -40,9 +47,13 @@ import Footer from './footer';
     const contact ={
       name: this.state.name,
       email: this.state.email,
-      question: this.state.question,
+     message: this.state.message,
+      phone: this.state.phone
     }
     console.log(contact)
+    axios.post(BACKEND_URL + 'contact/add', contact)
+    .then(res=>console.log(res.data));
+    this.props.history.push('/');
 
     fetch(contact).then((response) => {
       console.log(response);
@@ -53,7 +64,8 @@ import Footer from './footer';
     this.setState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        phone: '',
     })
     window.alert('Thank you sending us a message')
     console.log(contact)
@@ -110,14 +122,13 @@ import Footer from './footer';
     </div>
 
     <div className="form-group">
-
     <label>Phone Number</label>
                 <input 
                type="text"
                required
                className='form-control line'
-               value={this.state.phoneNumber}
-               onChange={this.onChangePhoneNumber}
+               value={this.state.phone}
+               onChange={this.onChangePhone}
               />
     </div>
     
@@ -145,4 +156,4 @@ import Footer from './footer';
 
 
 
-export default Contact; 
+export default  (Contact); 
