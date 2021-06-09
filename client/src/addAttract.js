@@ -30,12 +30,6 @@ class addAttract extends Component {
             description: "",
             website: "",
             imageURL: "",
-            location: {
-                address: "",
-                city: "",
-                state: "",
-                zipcode: ""
-            },
             indoors: 0,
             childFriendly: 0
         }

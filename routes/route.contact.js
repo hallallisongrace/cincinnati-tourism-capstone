@@ -4,28 +4,30 @@ let Contact = require('../models/model.contact');
 
 router.route('/').get((req, res) => {
   Contact.find()
-    .then(users => res.json(Contact))
+    .then(contact => res.json(Contact))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 
-router.route('/add').post((req, res) => {
-    const firstname = req.body.firstname;
-    const lastname = req.body.lastname;
+router.route('/addcontact').post((req, res) => {
+    const fullname = req.body.fullname;
     const emailaddress = req.body.emailaddress;
-    const message = req.body.message
+    const message = req.body.message;
+    const phone = req.body.phone;
 
     const newContact = new Contact({
-        firstname,
-        lastname,
+        fullname,
         emailaddress,
-        message
+        message, 
+        phone, 
 
     });
-  newContact.save()
-    .then(() => res.json('Message Sent!'))
-    .catch(err => res.status(400).json('Error: ' + err));
-});
-
+    newContact.save()
+    .then(() => {
+        res.json('Contact Added')
+    }).catch((err) => {
+        res.status(400).json('Error ' + err)
+    })
+})
 
 module.exports = router;

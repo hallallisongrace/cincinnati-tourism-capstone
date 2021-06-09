@@ -10,12 +10,12 @@ import {BACKEND_URL} from './config';
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
     this.onChangeMessage = this.onChangeMessage.bind(this);
-    this.onChangePhone = this.onChangePhone.bind(this);
+    this.onChangePhoneNumber = this.onChangePhoneNumber.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.state = {
         name: " ",
         email: " ",
-        messahe: " ",
+        message: " ",
         phone: " ",
       } 
     }
@@ -34,12 +34,12 @@ import {BACKEND_URL} from './config';
   }
   onChangeMessage(e){
     this.setState({
-      question: e.target.value
+      message: e.target.value
     })
   }
-  onChangePhone(e){
+  onChangePhoneNumber(e){
     this.setState({
-      question: e.target.value
+      phone: e.target.value
     })
   }
   onSubmit(e){
@@ -48,7 +48,7 @@ import {BACKEND_URL} from './config';
       name: this.state.name,
       email: this.state.email,
      message: this.state.message,
-      phone: this.state.phone
+      phone: this.state.phone,
     }
     console.log(contact)
     axios.post(BACKEND_URL + 'contact/add', contact)
@@ -65,7 +65,7 @@ import {BACKEND_URL} from './config';
         name: '',
         email: '',
         message: '',
-        phone: '',
+        phone: ''
     })
     window.alert('Thank you sending us a message')
     console.log(contact)
@@ -94,7 +94,7 @@ import {BACKEND_URL} from './config';
                 <input 
                type="text"
                required
-               className='form-control line'
+               className='form-controls'
                value={this.state.name}
                onChange={this.onChangeName}
               />
@@ -102,12 +102,12 @@ import {BACKEND_URL} from './config';
     <div className="form-group">
          <label>Email</label>
            <input 
-            type="email"
+            type= "email"
             required
-            className='form-control'
+            className='form-controls'
             value={this.state.email}
             onChange={this.onChangeEmail}
-          />
+            />
 
     </div>
     <div className="form-group">
@@ -115,30 +115,27 @@ import {BACKEND_URL} from './config';
                 <input 
                type="text"
                required
-               className='form-control line'
+               className='form-controls '
                value={this.state.message}
-               onChange={this.onChangeMessage}
-              />
+               onChange={this.onChangeMessage}/>
     </div>
 
     <div className="form-group">
     <label>Phone Number</label>
                 <input 
-               type="text"
+               type="tel"
                required
-               className='form-control line'
+               className='form-controls'
                value={this.state.phone}
-               onChange={this.onChangePhone}
+               onChange={this.onChangePhoneNumber}
               />
     </div>
     
              <div className="form-group">
            
-            </div>
-         <div className="form-group">
-        <input class="btn btn-sumbit" type="sumbit" value="Sumbit"/>
-            </div>
+             <input type='submit' value="Sumbit" className="btn-add" />        
 
+            </div>
 </div>
 </div>            </div>
           </form> 
@@ -157,3 +154,4 @@ import {BACKEND_URL} from './config';
 
 
 export default  (Contact); 
+
