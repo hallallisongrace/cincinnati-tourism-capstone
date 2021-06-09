@@ -7,11 +7,9 @@
     background-size: cover;
     background-position: center;
 }
- .skewed{
-    transform: translate(200px);
-} 
+ 
 #section:first-of-type{
-    background-image:url('./assets/triangle.jpg');
+    background-image:url('./assets/downtown.jpg');
     max-height: 100vh;
     height:100vh;
     background-size: cover;
