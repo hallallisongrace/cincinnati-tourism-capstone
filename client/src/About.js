@@ -11,7 +11,7 @@ export default class About extends Component {
                      <div>
             <div id="parallax-world-of-ugg">
   
-  <section>
+  <section className="title" id="about-header">
     <div className="title">
       <h1>Sing the Queen City</h1>
     </div>

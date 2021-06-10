@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 import Contact from './contact';
 import About from './About';
 import './App.css';
-import 'weather-icons/css/weather-icons.css';
+// IMPORTS BELOW ARE FOR WEATHER APP 
+import Weather from './app_component/weather.component'
+import Form from './app_component/form.component.js';
+//import 'weather-icons/css/weather-icons.css';
 // IMPORTS ABOVE ARE FOR WEATHER APP ^
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './footer'; //Include Footer
@@ -28,7 +31,7 @@ class App extends React.Component {
     return (
      <Router>
       <div className="maincontainer">
-        {/* <Burger/> */}
+        { <Burger/> }
         <Route exact path='/about' component={About} />
         <Route exact path='/home' component={Home} />
         <Route exact path='/Contact' component ={Contact}/>

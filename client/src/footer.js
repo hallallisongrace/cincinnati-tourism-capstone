@@ -2,10 +2,18 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css'
-import github from './assets/assets/githubicon.png';
-import linkedin from './assets/assets/linkedinicon.png';
+// import github from './assets/assets/githubicon.png';
+// import linkedin from './assets/assets/linkedinicon.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
+import {
+  faGithub,
+  faLinkedin,
+  faYoutube,
+  faTwitter,
+  faInstagram,
+  faFacebook
+} from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -15,14 +23,14 @@ class Footer extends React.Component
   render()
   {
     return (
-<footer className="footer-column">               
+<footer>               
 
     
 
+<div className ="footer-area">
 
 
-
-    <div className="footer-row">
+    <div className="footer-columns">
      <div ClassName="footeroptions" id="footer-left">
      <ul className="nav-item">
       <a className="nav-link active" aria-current="page" href="#">Home</a>
@@ -36,9 +44,9 @@ class Footer extends React.Component
         <ul className="nav-item">
               <a className="nav-link" href="#">Add Attractions</a>
         </ul>
-        <ul className="nav-item">
-              <a className="nav-link" href="#">View Attractions</a>
-         </ul>
+
+      </div>
+      <div className="dropdown-container">
  <ul className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Seasons
@@ -72,31 +80,66 @@ class Footer extends React.Component
                 <ul><a className="dropdown-item" href="#">Luxury</a></ul>
               </ul>
             </ul>
-      
+            <ul className="nav-item">
+              <a className="nav-link" href="#">View Attractions</a>
+         </ul>
     
           <h3 id="kable-title"></h3>
         </div>
-        
+        </div>
+<div className="media-container" id="mediaIcons">
+  <FontAwesomeIcon icon={faYoutube} />
+    <FontAwesomeIcon icon={faInstagram} />
+    <FontAwesomeIcon icon={faTwitter} />
+    <FontAwesomeIcon icon={faFacebook} />
+</div>
 
-    <div className="footer-right">
+    <div className="shelby-container" id="shelby-footer">
+    
     <h3 id="dom-title">Domynique Shelby</h3>
-    <a href="https://github.com/dshelby24" ><img src={github}/></a> 
-    <a href="https://www.linkedin.com/in/domynique-v-shelby/" ><img src={linkedin}/></a> 
     
-
-    
- <h3 id="phil-title">Philicia Watson</h3>
- <a href="https://github.com/PhiliciaWatson" ><img src={github}/></a> 
- <a href="https://www.linkedin.com/in/philicia-watson-b26bba1b1/" ><img src={linkedin}/></a> 
-           
-
-    
-    <h3 id="all-title">Allison Hall</h3>
-    <a href="https://github.com/hallallisongrace" ><img src={github}/></a> 
-    <a href="https://linkedin.com/in/hallallisongrace" ><img src={linkedin}/></a> 
-     </div>
+    <div className="shelby-icons">
+    <a href="https://github.com/dshelby24" ><FontAwesomeIcon icon={faGithub}/></a> 
+    <a href="https://www.linkedin.com/in/domynique-v-shelby/" ><FontAwesomeIcon icon={faLinkedin}/></a> 
     </div>
+    </div>
+    
+
+    <div className="watson-container">
+    <div className="watson-title">
+      <h3 id="phil-title">Philicia Watson</h3>
+    </div>
+    <div className="watson-icons">
+        <a href="https://github.com/PhiliciaWatson" ><FontAwesomeIcon icon={faGithub}/></a> 
+        <a href="https://www.linkedin.com/in/philicia-watson-b26bba1b1/" ><FontAwesomeIcon icon={faLinkedin}/></a> 
+    </div>
+    </div>
+
+    <div className="hall-container">
+    <div className="hall-title">
+    <h3 id="all-title">Allison Hall</h3>
+    </div>
+    <div className="hall-icons">
+    <a href="https://github.com/hallallisongrace" ><FontAwesomeIcon icon={faGithub}/></a> 
+    <a href="https://linkedin.com/in/hallallisongrace" ><FontAwesomeIcon icon={faLinkedin}/></a> 
+     </div>
+     </div>
+    
+
+  
+
+
+<div className="legalinfo">
+<p>Site by TGR Agency</p>
+<p>Copyright TGR Agency 2021</p>
+<p>Terms & Conditions | Privacy | Legal Notice</p>
+</div>
+
+</div>
+
     </footer>
+
+
 
 
     )

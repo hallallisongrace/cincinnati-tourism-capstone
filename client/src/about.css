@@ -201,3 +201,7 @@ a.nav-link{
   font-family: Oswald, sans-serif;
 }
 
+section.title#about-header{
+  display: flex;
+  margin-top: 10%;
+}
