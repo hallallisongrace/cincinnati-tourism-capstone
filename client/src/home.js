@@ -111,42 +111,36 @@ class Home extends React.Component{
     <section className="container-fluid position-relative" id="section">
       <h1 className="position-absolute top-50 start-50 translate-middle text-light">WELCOME <br />COME TRAVEL WITH US</h1>
     </section>
-    <section className="container d-flex justify-content-center">
+    {/* <section className="container d-flex justify-content-center">
       <div className="ratio ratio-21x9 m-5">
         <iframe className="shadow-lg rounded" src="https://www.youtube.com/embed/pKwuW06NvXM" allowFullScreen id="video"></iframe>
       </div>
-    </section>
+    </section> */}
   {/* IMAGES BELOW */}
-    <section className="container-fluid text-center">
-    <div className="row">
-    <div className="col-sm-6 align-self-start">
-        <img src={Night} className="img-fluid shadow-lg border border-light rounded" />
-        <p className="bg-dark rounded text-light p-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt tempore perspiciatis ab sunt cumque quis repudiandae labore? Aspernatur doloribus ab architecto perferendis iusto vero explicabo tempora rerum in suscipit.</p>
+    <section className="container-fluid d-flex justify-content-end text-center mt-4">
+      <div className="col-sm-8">
+      <img src={cityHall} className="img-thumbnail border border-light rounded"/>
+      <p className="mt-4 p-3 text-light">ndlightjendijneindine</p>
       </div>
-    </div>
-  </section>
-
-  <section className="container-fluid">
-    <div className="row align-self-end">
-      <div className="col-sm-6">
-        <img src={Museum} className="img-fluid shadow-lg border border-light rounded" />
-        <p className="bg-dark rounded text-light p-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt tempore perspiciatis ab sunt cumque quis repudiandae labore? Aspernatur doloribus ab architecto perferendis iusto vero explicabo tempora rerum in suscipit.</p>
+    </section>
+    <section className="container-fluid d-flex justify-content-start text-center mt-4">
+      <div className="col-sm-8">
+      <img src={Museum} className="img-fluid border border-light rounded"/>
+      <p className="mt-4 p-3 text-light">ndjendijneindine</p>
       </div>
-    </div>
-  </section>
-
-  <section className="container-fluid align-items-center">
-    <div className="col-sm-6 ">
-      <img src={cityHall} className="img-fluid shadow-lg border border-light rounded" />
-      <p className="bg-dark rounded text-light p-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt tempore perspiciatis ab sunt cumque quis repudiandae labore? Aspernatur doloribus ab architecto perferendis iusto vero explicabo tempora rerum in suscipit.</p>
-    </div>
-  </section>
-  <section className="container-fluid">
-    <div className="col-sm-6">
-      <img src={bridge} className="img-fluid shadow-lg border border-light rounded" />
-      <p className="bg-dark rounded text-light p-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt tempore perspiciatis ab sunt cumque quis repudiandae labore? Aspernatur doloribus ab architecto perferendis iusto vero explicabo tempora rerum in suscipit.</p>
-    </div>
-  </section>
+    </section>
+    <section className="container-fluid d-flex justify-content-end text-center mt-4">
+      <div className="col-sm-8">
+      <img src={bridge} className="img-fluid border border-light rounded"/>
+      <p className="mt-4 p-3 text-light">ndjendijneindine</p>
+      </div>
+    </section>
+    <section className="container-fluid d-flex justify-content-start text-center mt-4">
+      <div className="col-sm-8">
+      <img src={Night} className="img-fluid border border-light rounded"/>
+      <p className="mt-4 p-3 text-light">ndjendijneindine</p>
+      </div>
+    </section>
   {/* <section> */}
       {/* <Form loadweather={this.getWeather} error={this.state.error}/> */}
       {/* <Weather city={this.state.city} country={this.state.country} temp_celsius={this.state.temp_celsius} temp_min={this.state.temp_min} temp_max={this.state.temp_max} description={this.state.cincinnati.description} weatherIcon={this.state.icon} /> */}
@@ -154,9 +148,7 @@ class Home extends React.Component{
   
   
  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
   </div>
   
 
