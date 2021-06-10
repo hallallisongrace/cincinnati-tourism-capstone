@@ -27,7 +27,7 @@ class Footer extends React.Component
 
     
 
-
+<div className ="footer-area">
 
 
     <div className="footer-columns">
@@ -87,31 +87,42 @@ class Footer extends React.Component
           <h3 id="kable-title"></h3>
         </div>
         </div>
-
-<div Classname = "socialmediaicons">
+<div className="media-container" id="mediaIcons">
   <FontAwesomeIcon icon={faYoutube} />
     <FontAwesomeIcon icon={faInstagram} />
     <FontAwesomeIcon icon={faTwitter} />
     <FontAwesomeIcon icon={faFacebook} />
 </div>
 
-    <div className="footer-right">
+    <div className="shelby-container" id="shelby-footer">
+    
     <h3 id="dom-title">Domynique Shelby</h3>
+    
+    <div className="shelby-icons">
     <a href="https://github.com/dshelby24" ><FontAwesomeIcon icon={faGithub}/></a> 
     <a href="https://www.linkedin.com/in/domynique-v-shelby/" ><FontAwesomeIcon icon={faLinkedin}/></a> 
-    
+    </div>
+    </div>
     
 
-    
- <h3 id="phil-title">Philicia Watson</h3>
- <a href="https://github.com/PhiliciaWatson" ><FontAwesomeIcon icon={faGithub}/></a> 
- <a href="https://www.linkedin.com/in/philicia-watson-b26bba1b1/" ><FontAwesomeIcon icon={faLinkedin}/></a> 
-           
+    <div className="watson-container">
+    <div className="watson-title">
+      <h3 id="phil-title">Philicia Watson</h3>
+    </div>
+    <div className="watson-icons">
+        <a href="https://github.com/PhiliciaWatson" ><FontAwesomeIcon icon={faGithub}/></a> 
+        <a href="https://www.linkedin.com/in/philicia-watson-b26bba1b1/" ><FontAwesomeIcon icon={faLinkedin}/></a> 
+    </div>
+    </div>
 
-    
+    <div className="hall-container">
+    <div className="hall-title">
     <h3 id="all-title">Allison Hall</h3>
+    </div>
+    <div className="hall-icons">
     <a href="https://github.com/hallallisongrace" ><FontAwesomeIcon icon={faGithub}/></a> 
     <a href="https://linkedin.com/in/hallallisongrace" ><FontAwesomeIcon icon={faLinkedin}/></a> 
+     </div>
      </div>
     
 
@@ -124,7 +135,7 @@ class Footer extends React.Component
 <p>Terms & Conditions | Privacy | Legal Notice</p>
 </div>
 
-
+</div>
 
     </footer>
 

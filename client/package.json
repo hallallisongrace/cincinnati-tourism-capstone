@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-scripts": "^4.0.3"
+    "cors": "^2.8.5"
   }
 }
