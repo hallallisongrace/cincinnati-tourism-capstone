@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import React from 'React';
 import './home.css';
-import 'weather-icons/css/weather-icons.css';
+//import 'weather-icons/css/weather-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // images below
 import cityHall from './assets/cityHall.jpg';

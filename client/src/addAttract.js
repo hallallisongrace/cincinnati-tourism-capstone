@@ -158,7 +158,7 @@ class addAttract extends Component {
                             <div className="select-style">
                             <select required 
                             className='form-control'
-                            onChange={this.onChangeIndoors}>
+                            onChange={this.onChangeIndoors} id="please-move">
                                 <option value=''>Select</option>
                                 <option value='1'>Indoor</option>
                                 <option value='0'>Outdoor</option>
@@ -170,7 +170,7 @@ class addAttract extends Component {
                             <div className="select-style">
                             <select required 
                             className='form-control move '
-                            onChange={this.onChangeChild}>
+                            onChange={this.onChangeChild} id="also-move">
                                 <option id="marginL" value=''>Select</option>
                                 <option value='1'>Child Friendly</option>
                                 <option value='0'>21 and over</option>

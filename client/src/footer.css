@@ -14,15 +14,105 @@ h3#all-title{
     font-family: Oswald, sans-serif;
 }
 
-footer.footer-column {
+footer.footer-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-family: Oswald, sans-serif;
 }
 
 div.footer-row {
     display:flex;
-    flex-direction: row;
+    flex-direction: row
 }
 
+.nav-item{
+    font-size: 15px;
+    flex-direction: row;
+    
+}
+
+.legalinfo{
+    font-size: 10px;
+}
+
+div.footer-columns {
+    display: flex;
+    justify-content: center
+
+}
+
+div.footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.legalinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+div.media-container#mediaIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3#dom-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.shelby-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3#phil-title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.watson-icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h3#all-title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.hall-icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-area{
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.25);
+    }
