@@ -4,7 +4,7 @@ import axios from 'axios';
 import {BACKEND_URL} from './config'
 
 
-export default class SingleAttraction extends Component {
+export default class singleAttraction extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -24,19 +24,13 @@ export default class SingleAttraction extends Component {
         }
     }
     componentDidMount() {
-        axios.get(BACKEND_URL + 'attractions/' + this.props.match.params.id)
+        axios.post(BACKEND_URL + 'attractions/' + this.props.match.params.id)
         .then((response) => {
             this.setState({
                 name: response.data.name,
                 description: response.data.description,
                 website: response.data.website,
                 imageURL: response.data.imageURL,
-                location: {
-                    address: response.data.location.address,
-                    city: response.data.location.city,
-                    state: response.data.location.state,
-                    zipcode: response.data.location.zipcode
-                },
                 indoors: response.data.indoors.toString(),
                 childFriendly: response.data.childFriendly.toString(),
                 loading: false
@@ -57,13 +51,7 @@ export default class SingleAttraction extends Component {
                                 <div className='singleName'>
                                     {this.state.name}
                                 </div>
-                                <div className='singleAddress'>
-                                <div className='text-single-address'>
-                                    {this.state.location.address}
-                                    <br />
-                                    {this.state.location.city}, {this.state.location.state}
-                                </div>
-                            </div>
+                            
                             </div>
                             <div className="singleHeaderImage">
                                 <img className='singleImage' src={this.state.imageURL} alt='' />

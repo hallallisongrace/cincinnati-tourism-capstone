@@ -17,8 +17,31 @@ import {BACKEND_URL} from './config';
         email: " ",
         message: " ",
         phone: " ",
-      } 
+        contactInfo: []
+      }
+     }
+      
+  
+    componentDidMount(){
+      this.getContactPost();
     }
+    
+    getContactPost() {
+        axios.get(BACKEND_URL + 'contact')
+       .then((res) => {
+         const data = res.data;
+          console.log(res.data)
+    
+         this.setState({contactInfo: data})
+         console.log('data dun did got');
+      })
+        .catch((err) => {
+          console.log('error ABANDON SHIP!!!')
+        });
+      }
+
+
+
 
 
 
@@ -50,17 +73,14 @@ import {BACKEND_URL} from './config';
      message: this.state.message,
       phone: this.state.phone,
     }
+
+    
     console.log(contact)
     axios.post(BACKEND_URL + 'contact/add', contact)
     .then(res=>console.log(res.data));
     this.props.history.push('/');
 
-    fetch(contact).then((response) => {
-      console.log(response);
-      response.json().then((data) => {
-          console.log(data);
-      });
-  });
+  
     this.setState({
         name: '',
         email: '',
