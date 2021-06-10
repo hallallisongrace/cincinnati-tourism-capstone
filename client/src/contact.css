@@ -145,6 +145,10 @@ form small {
   margin: 0 0 0 0.5em;
 }
 
+
+.titlecontact h3{
+  text-align: center;
+}
 @media only screen and (max-width: 480px) {
   .pull-right {
     float: none;

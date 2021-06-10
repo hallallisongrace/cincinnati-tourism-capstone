@@ -10,7 +10,6 @@ import { withRouter } from 'react-router-dom'
 
 
 
-
 class addAttract extends Component {
     constructor (props) {
         super(props)
@@ -106,13 +105,21 @@ class addAttract extends Component {
             location: this.state.location,
             indoors: this.state.indoors,
             childFriendly: this.state.childFriendly
-        }
-        console.log(BACKEND_URL + 'attractions/add', attraction)
-        axios.post(BACKEND_URL + 'attractions/add', attraction)
-        .then(res => console.log(res.data));
-        this.props.history.push('/attractions');
-       console.log(attraction)
-    };
+        };
+    //     console.log(BACKEND_URL + 'attractions/add', attraction)
+    //     axios.post(BACKEND_URL + 'attractions/add', attraction)
+    //     .then(res => console.log(res.data));
+    //     this.props.history.push('/attractions');
+    //    console.log(attraction)
+
+    console.log(addAttract);
+
+    axios.post('http://localhost:5000/attractions', addAttract)                
+    .then(res => console.log(res.data));
+    
+    window.location = '/contact';
+  }
+    
     render() {
         return(
             <div>
@@ -178,6 +185,6 @@ class addAttract extends Component {
             </div>
         )
     }
-}
+};
 
 export default withRouter (addAttract);

@@ -14,12 +14,12 @@ import Footer from './footer'; //Include Footer
 import Home from './home';
 
 
+
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Viewattra from './Viewattra';
 import addAttract from './addAttract';
 import Burger from './components/Burger/Burger';
 import SingleAttraction  from './singleatt';
-import afteradd from './afteradd';
 
 
 
@@ -38,7 +38,7 @@ class App extends React.Component {
         <Route exact path='/attractions' component ={Viewattra}/>        
         <Route exact path ='/add' component= {addAttract}/>
         <Route exact path = '/attractions/:id' component={SingleAttraction}/>
-        <Route exact path = '/after' component={afteradd}/>
+       
 
 
 
