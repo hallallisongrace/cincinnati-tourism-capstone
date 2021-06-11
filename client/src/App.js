@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
      <Router>
       <div className="maincontainer">
-        {/* { <Burger/> } */}
+       <Burger/> 
         <Route exact path='/about' component={About} />
         <Route exact path='/home' component={Home} />
         <Route exact path='/Contact' component ={Contact}/>
