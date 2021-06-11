@@ -95,13 +95,13 @@ export default class About extends Component {
 
     <section>
       <div className="parallax-six">
-        <h2>Love the Outdoors</h2>
+        <h2>Wander & Wonder</h2>
       </div>
   </section>
   <section>
   <div className="block">
       <p className="header3">Unparalled Natural Beauty</p>
-      <p>From its verdant hills and valleys to shining river, Cincinnati is a natural wonder. The city boasts of numerous public parks with extensive grounds, hiking trails, as well as the largest interconnected biking trails in the United States. Go on, adventure is out there.</p>
+      <p>From its verdant hills and valleys to shining river, Cincinnati is a natural wonder. The city boasts of numerous public parks with extensive grounds and hiking trails, as well as the largest interconnected system of biking trails in the United States. Go on, adventure is out there.</p>
    </div>
    </section>
  

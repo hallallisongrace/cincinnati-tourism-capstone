@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Contact from './contact';
 import About from './About';
 import './App.css';
+// IMPORTS BELOW ARE FOR WEATHER APP 
+
+//import 'weather-icons/css/weather-icons.css';
 // IMPORTS ABOVE ARE FOR WEATHER APP ^
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './footer'; //Include Footer
@@ -16,6 +19,7 @@ import Viewattra from './Viewattra';
 import addAttract from './addAttract';
 import Burger from './components/Burger/Burger';
 import SingleAttraction  from './singleatt';
+
 
 
 
