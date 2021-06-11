@@ -34,10 +34,10 @@
                 Seasons
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <li><a className="dropdown-item" href="#">Spring</a></li>
-                <li><a className="dropdown-item" href="#">Summer</a></li>
-                <li><a className="dropdown-item" href="#">Autumn</a></li>
-                <li><a className="dropdown-item" href="#">Winter</a></li>
+                <li><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/spring">Spring</a></li>
+                <li><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/summer">Summer</a></li>
+                <li><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/fall">Autumn</a></li>
+                <li><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/winter">Winter</a></li>
               </ul>
               </li>
               <li className="nav-item dropdown">
@@ -45,10 +45,10 @@
                 Destinations
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">Over the Rhine</a></li>
-                <li><a className="dropdown-item" href="#">Smale Riverfront Park</a></li>
-                <li><a className="dropdown-item" href="#">Downtown</a></li>
-                <li><a className="dropdown-item" href="#">Covington/Northern Kentucky</a></li>
+                <li><a className="dropdown-item" href="https://wandercincinnati.com/2019/12/01/over-the-rhine-cincinnati/">Over the Rhine</a></li>
+                <li><a className="dropdown-item" href="https://www.cincinnatiparks.com/river-parks/smale-riverfront-park/">Smale Riverfront Park</a></li>
+                <li><a className="dropdown-item" href="https://www.downtowncincinnati.com/">Downtown</a></li>
+                <li><a className="dropdown-item" href="https://www.meetnky.com/">Covington/Northern Kentucky</a></li>
               </ul>
               </li>
               <li className="nav-item dropdown">
@@ -56,10 +56,10 @@
                 Experiences
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">Culture</a></li>
-                <li><a className="dropdown-item" href="#">Outdoors</a></li>
-                <li><a className="dropdown-item" href="#">Food</a></li>
-                <li><a className="dropdown-item" href="#">Luxury</a></li>
+                <li><a className="dropdown-item" href="https://www.citybeat.com/arts-culture">Culture</a></li>
+                <li><a className="dropdown-item" href="https://www.tripadvisor.com/Attractions-g5503747-Activities-c61-The_Cincinnati_Region.html">Outdoors</a></li>
+                <li><a className="dropdown-item" href="https://photos.citybeat.com/25-essential-foods-every-cincinnati-visitor-should-try/?slide=1&admin-ajaxwew">Food</a></li>
+                <li><a className="dropdown-item" href="https://anniewearsit.com/cincinnati-official-travel-guide/">Luxury</a></li>
               </ul>
             </li>
           </ul>

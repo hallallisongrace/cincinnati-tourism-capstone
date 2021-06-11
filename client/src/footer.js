@@ -33,16 +33,16 @@ class Footer extends React.Component
     <div className="footer-columns">
      <div ClassName="footeroptions" id="footer-left">
      <ul className="nav-item">
-      <a className="nav-link active" aria-current="page" href="#">Home</a>
+      <a className="nav-link active" aria-current="page" href="/home">Home</a>
       </ul>
         <ul className="nav-item">
-              <a className="nav-link" href="">About</a>
+              <a className="nav-link" href="/about">About</a>
         </ul>
         <ul className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <a className="nav-link" href="/contact">Contact</a>
         </ul>
         <ul className="nav-item">
-              <a className="nav-link" href="#">Add Attractions</a>
+              <a className="nav-link" href="/add">Add Attractions</a>
         </ul>
 
       </div>
@@ -52,10 +52,10 @@ class Footer extends React.Component
                 Seasons
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <ul><a className="dropdown-item" href="#">Spring</a></ul>
-                <ul><a className="dropdown-item" href="#">Summer</a></ul>
-                <ul><a className="dropdown-item" href="#">Autumn</a></ul>
-                <ul><a className="dropdown-item" href="#">Winter</a></ul>
+                <ul><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/spring">Spring</a></ul>
+                <ul><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/summer">Summer</a></ul>
+                <ul><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/fall">Autumn</a></ul>
+                <ul><a className="dropdown-item" href="https://cincinnatiusa.com/trip-ideas/winter">Winter</a></ul>
               </ul>
               </ul>
               <ul className="nav-item dropdown">
@@ -63,10 +63,10 @@ class Footer extends React.Component
                 Destinations
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <ul><a className="dropdown-item" href="#">Over the Rhine</a></ul>
-                <ul><a className="dropdown-item" href="#">Smale Riverfront Park</a></ul>
-                <ul><a className="dropdown-item" href="#">Downtown</a></ul>
-                <ul><a className="dropdown-item" href="#">Covington/Northern Kentucky</a></ul>
+                <ul><a className="dropdown-item" href="https://wandercincinnati.com/2019/12/01/over-the-rhine-cincinnati/">Over the Rhine</a></ul>
+                <ul><a className="dropdown-item" href="https://www.cincinnatiparks.com/river-parks/smale-riverfront-park/">Smale Riverfront Park</a></ul>
+                <ul><a className="dropdown-item" href="https://www.downtowncincinnati.com/">Downtown</a></ul>
+                <ul><a className="dropdown-item" href="https://www.meetnky.com/">Covington/Northern Kentucky</a></ul>
               </ul>
               </ul>
               <ul className="nav-item dropdown">
@@ -74,14 +74,14 @@ class Footer extends React.Component
                 Experiences
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <ul><a className="dropdown-item" href="#">Culture</a></ul>
-                <ul><a className="dropdown-item" href="#">Outdoors</a></ul>
-                <ul><a className="dropdown-item" href="#">Food</a></ul>
-                <ul><a className="dropdown-item" href="#">Luxury</a></ul>
+                <ul><a className="dropdown-item" href="https://www.citybeat.com/arts-culture">Culture</a></ul>
+                <ul><a className="dropdown-item" href="https://www.tripadvisor.com/Attractions-g5503747-Activities-c61-The_Cincinnati_Region.html">Outdoors</a></ul>
+                <ul><a className="dropdown-item" href="https://photos.citybeat.com/25-essential-foods-every-cincinnati-visitor-should-try/?slide=1&admin-ajaxwew">Food</a></ul>
+                <ul><a className="dropdown-item" href="https://anniewearsit.com/cincinnati-official-travel-guide/">Luxury</a></ul>
               </ul>
             </ul>
             <ul className="nav-item">
-              <a className="nav-link" href="#">View Attractions</a>
+              <a className="nav-link" href="/attractions">View Attractions</a>
          </ul>
     
           <h3 id="kable-title"></h3>

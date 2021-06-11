@@ -4,8 +4,6 @@ import Contact from './contact';
 import About from './About';
 import './App.css';
 // IMPORTS BELOW ARE FOR WEATHER APP 
-import Weather from './app_component/weather.component'
-// import Form from './app_component/form.component.js';
 //import 'weather-icons/css/weather-icons.css';
 // IMPORTS ABOVE ARE FOR WEATHER APP ^
 import 'bootstrap/dist/css/bootstrap.min.css';
