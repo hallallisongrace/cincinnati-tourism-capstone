@@ -29,6 +29,11 @@ class addAttract extends Component {
             description: "",
             website: "",
             imageURL: "",
+            location:{
+            address: "",
+            city: "",
+            state: ""
+            },
             indoors: 0,
             childFriendly: 0
         }
@@ -57,6 +62,7 @@ class addAttract extends Component {
     onChangeAddress(e) {
         this.setState({
             location:{
+                ...this.state.location,
                 address: e.target.value
             }
         })
@@ -103,6 +109,9 @@ class addAttract extends Component {
             website: this.state.website,
             imageURL: this.state.imageURL,
             location: this.state.location,
+            address: this.state.address,
+            city: this.state.city,
+            state: this.state.state,
             indoors: this.state.indoors,
             childFriendly: this.state.childFriendly
         };
@@ -114,10 +123,10 @@ class addAttract extends Component {
 
     console.log(addAttract);
 
-    axios.post('http://localhost:5000/attractions', addAttract)                
+    axios.post('http://localhost:5000/attractions/add', addAttract)                
     .then(res => console.log(res.data));
     
-    window.location = '/contact';
+    window.location = '/attractions:id';
   }
     
     render() {
@@ -151,6 +160,27 @@ class addAttract extends Component {
                             <input type='text' required
                              className='form-control' 
                             value={this.state.imageURL} onChange={this.onChangeImageURL}>
+                            </input>
+                        </div>
+                        <div className="form-group">
+                            <label>Address: </label>
+                            <input type='text' required 
+                            className='form-control' 
+                            value={this.state.location.address} onChange={this.onChangeAddress}>
+                            </input>
+                        </div>
+                        <div className="form-group">
+                            <label>City: </label>
+                            <input type='text' required 
+                            className='form-control' 
+                            value={this.state.location.city} onChange={this.onChangeCity}>
+                            </input>
+                        </div>
+                        <div className="form-group">
+                            <label>State: </label>
+                            <input type='text' required 
+                            className='form-control' 
+                            value={this.state.location.state} onChange={this.onChangeState}>
                             </input>
                         </div>
                         <div className="form-group">

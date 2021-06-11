@@ -15,19 +15,19 @@
         <div className="collapse navbar-collapse text-center navbar-nav-scroll" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 bg-light">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <a className="nav-link active" aria-current="page" href="/home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="/about">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <a className="nav-link" href="/contact">Contact</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Add Attractions</a>
+              <a className="nav-link" href="/add">Add Attractions</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">View Attractions</a>
+              <a className="nav-link" href="/attractions">View Attractions</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

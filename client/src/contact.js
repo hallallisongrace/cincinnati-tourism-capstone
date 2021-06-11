@@ -33,7 +33,7 @@ import {BACKEND_URL} from './config';
           console.log(res.data)
     
          this.setState({contactInfo: data})
-         console.log('data dun did got');
+         console.log('Yay it works');
       })
         .catch((err) => {
           console.log('error ABANDON SHIP!!!')
@@ -78,7 +78,7 @@ import {BACKEND_URL} from './config';
     console.log(contact)
     axios.post(BACKEND_URL + 'contact/add', contact)
     .then(res=>console.log(res.data));
-    this.props.history.push('/');
+    this.props.history.push('/home');
 
   
     this.setState({
@@ -88,8 +88,11 @@ import {BACKEND_URL} from './config';
         phone: ''
     })
     window.alert('Thank you sending us a message')
-    console.log(contact)
+    console.log(contact) ;
+
   }
+
+
   render() {
     return (
   
