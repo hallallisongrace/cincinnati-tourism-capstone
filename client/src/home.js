@@ -107,40 +107,66 @@ class Home extends React.Component{
   render(){
 
     return(
-  <div id="body">
+  <div id="body" className="text-center">
     <section className="container-fluid position-relative" id="section">
-      <h1 className="position-absolute top-50 start-50 translate-middle text-light">WELCOME <br />COME TRAVEL WITH US</h1>
+      <h1 className="position-absolute top-50 start-50 translate-middle text-light">WELCOME <br/>TO CINCY TRAVELS</h1>
     </section>
-    {/* <section className="container d-flex justify-content-center">
+    <section className="container-fluid text-light mt-5 p-5">
+      <h1 className="">THANK YOU! <br/>FOR CHOOSING CINCY TRAVELS</h1>
+      <h6> TRAVEL • EXPLORE • TOUR</h6>
+      <p>Wherever you are, here at CINCY TRAVELS we are dedicated to showing you the sites of the <b>Cincinnati</b> Area</p>
+    </section>
+    <section className="container-fluid text-light mt-5">
+      <h1 className="bg-white text-dark">POPULAR SITES</h1>
+      <h6>in the <b>Cincinnati Area</b></h6>
+    </section>
+  {/* IMAGES BELOW */}
+    <section className="container-fluid z-index-1 d-flex justify-content-end text-center mt-4">
+      <div className="col-sm-8 p-5 shadow-lg">
+        <div className="card rounded-0">
+          <div className="card-body">
+            <img src={cityHall} className="card-img border border-light rounded" />
+            <p className="mt-4 p-3 card-text">City Hall </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="container-fluid d-flex justify-content-start text-center mt-4">
+      <div className="col-sm-8 p-5 shadow-lg">
+        <div className="card rounded-0">
+          <div className="card-body">
+            <img src={Museum} className="card-img border border-light rounded" />
+            <p className="mt-4 p-3 card-text">City Hall </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="container-fluid d-flex justify-content-end text-center mt-4">
+      <div className="col-sm-8 p-5 shadow-lg">
+        <div className="card rounded-0">
+          <div className="card-body">
+            <img src={bridge} className="card-img border border-light rounded" />
+            <p className="mt-4 p-3 card-text">City Hall </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="container-fluid d-flex justify-content-start text-center mt-4">
+      <div className="col-sm-8 p-5 shadow-lg">
+        <div className="card rounded-0">
+          <div className="card-body">
+            <img src={Night} className="card-img border border-light rounded" />
+            <p className="mt-4 p-3 card-text">City Hall </p>
+          </div>
+        </div>
+      </div>
+    </section>
+     {/* <section className="container d-flex justify-content-center">
       <div className="ratio ratio-21x9 m-5">
         <iframe className="shadow-lg rounded" src="https://www.youtube.com/embed/pKwuW06NvXM" allowFullScreen id="video"></iframe>
       </div>
     </section> */}
-  {/* IMAGES BELOW */}
-    <section className="container-fluid d-flex justify-content-end text-center mt-4">
-      <div className="col-sm-8">
-      <img src={cityHall} className="img-thumbnail border border-light rounded"/>
-      <p className="mt-4 p-3 text-light">ndlightjendijneindine</p>
-      </div>
-    </section>
-    <section className="container-fluid d-flex justify-content-start text-center mt-4">
-      <div className="col-sm-8">
-      <img src={Museum} className="img-fluid border border-light rounded"/>
-      <p className="mt-4 p-3 text-light">ndjendijneindine</p>
-      </div>
-    </section>
-    <section className="container-fluid d-flex justify-content-end text-center mt-4">
-      <div className="col-sm-8">
-      <img src={bridge} className="img-fluid border border-light rounded"/>
-      <p className="mt-4 p-3 text-light">ndjendijneindine</p>
-      </div>
-    </section>
-    <section className="container-fluid d-flex justify-content-start text-center mt-4">
-      <div className="col-sm-8">
-      <img src={Night} className="img-fluid border border-light rounded"/>
-      <p className="mt-4 p-3 text-light">ndjendijneindine</p>
-      </div>
-    </section>
   {/* <section> */}
       {/* <Form loadweather={this.getWeather} error={this.state.error}/> */}
       {/* <Weather city={this.state.city} country={this.state.country} temp_celsius={this.state.temp_celsius} temp_min={this.state.temp_min} temp_max={this.state.temp_max} description={this.state.cincinnati.description} weatherIcon={this.state.icon} /> */}
