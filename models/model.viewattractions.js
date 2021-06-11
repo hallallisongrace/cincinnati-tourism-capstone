@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const attractionSchema = new Schema({
-    name: { type:String, required: true },
-    description: { type: String, required: true },
+    name: { type:String },
+    description: { type: String },
     website: { 
         type: String,
         validate: {

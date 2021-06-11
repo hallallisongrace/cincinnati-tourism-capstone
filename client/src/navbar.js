@@ -2,7 +2,6 @@
  import { Link, withRouter } from 'react-router-dom';
  import 'bootstrap/dist/css/bootstrap.min.css';
 
-
  class Header extends React.Component{
    render()
   {

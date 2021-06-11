@@ -1,5 +1,6 @@
 const router = require('express').Router();
 let Contact = require('../models/model.contact');
+const bodyParser = require('body-parser');
 
 
 
@@ -36,6 +37,8 @@ router.route('/add').post((req, res) => {
         phone, 
 
     });
+
+
     newContact.save()
     .then(() => {
         res.json('Contact Added')
@@ -74,7 +77,7 @@ router.route('/:id').get((req, res) => {
   });
   
 
-  router.get("/contacts", (req, res) => {
+  router.get("/contacts"), (req, res) => {
     Contact.find()
     .then((result) => {
       res.send(result)
@@ -82,5 +85,5 @@ router.route('/:id').get((req, res) => {
     .catch((err) => {
       console.log(err);
     });
-  })
+  }
 module.exports = router;
