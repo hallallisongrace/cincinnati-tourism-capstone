@@ -4,7 +4,6 @@ import Contact from './contact';
 import About from './About';
 import './App.css';
 // IMPORTS BELOW ARE FOR WEATHER APP 
-
 //import 'weather-icons/css/weather-icons.css';
 // IMPORTS ABOVE ARE FOR WEATHER APP ^
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,13 +30,14 @@ class App extends React.Component {
     return (
      <Router>
       <div className="maincontainer">
-       <Burger/> 
-        <Route exact path='/about' component={About} />
+        {/* { <Burger/> }  */}
+
         <Route exact path='/home' component={Home} />
+        <Route exact path='/about' component={About} />
         <Route exact path='/Contact' component ={Contact}/>
         <Route exact path='/attractions' component ={Viewattra}/>        
         <Route exact path ='/add' component= {addAttract}/>
-        <Route exact path = '/attractions/:id' component={SingleAttraction}/>
+        <Route path = '/attractions/:id' component={SingleAttraction}/>
        
 
 

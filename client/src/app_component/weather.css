@@ -1,0 +1,17 @@
+#container{
+    background-image:url('https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg');
+    background-size: cover;
+    border-radius: 100px;
+    border:none;
+    font-weight: bolder;
+}
+
+.blink_me {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

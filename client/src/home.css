@@ -1,10 +1,17 @@
 #body{
-    background-image: url('https://media.giphy.com/media/3oGRFvAHIY8cDgX1rG/source.gif'); 
-    /* https://64.media.tumblr.com/97cf49f13451b54db8b67157d5c51398/tumblr_n2k84vCX2L1qex6jlo1_500.gif */
+    background-image: url('https://mcdn.wallpapersafari.com/medium/77/13/HDCRfF.jpg'); 
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    font-family: 'Cormorant SC', serif;
+}
+
+#para{
+    font-family: 'Cormorant SC', serif;
+    font-weight: bold;
+    font-size: x-large;
+    /* text-decoration: underline; */
 }
 
 #section:first-of-type{
@@ -12,7 +19,46 @@
     opacity: 0.7;
     max-height: 100vh;
     height:100vh;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
+#video {
+    pointer-events: none;
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 100vh;
+    width:100vw;
+  }
+
+  #orange{
+    color: #F9CC87;
+  }
+
+  #green{
+    color:#D6F1C6;
+  }
+
+  #heading{
+    font-family: 'Cinzel Decorative', cursive;    
+    color:white;
+    background-color:black;
+    border-radius: 100px;
+  }
+  
+  #video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+#title{
+    font-family: 'Cinzel Decorative', cursive;    
+    font-weight:bolder;
+    color:black;
+    border-radius: 100px;
+    mix-blend-mode:screen;
+    text-shadow: 5px 5px 10px lightcyan;
+}
 

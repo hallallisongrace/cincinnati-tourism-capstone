@@ -13,9 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "weather-icons": "github:erikflowers/weather-icons"
   },
   "devDependencies": {
+    "build": "^0.1.4",
     "terser-brunch": "^4.0.0"
   }
 }

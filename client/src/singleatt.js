@@ -62,7 +62,7 @@ export default class singleAttraction extends Component {
                                 </div>
                                 <div className="singleBooleans">
                                     <div id="singleIndoors"><span>Indoors?</span> <br/> {this.state.indoors}</div>
-                                    <div id="singleFamily"><span>Family Friendly?</span> <br/> {this.state.childFriendly}</div>
+                                    <div id="singleFamily"><span>Child Friendly?</span> <br/> {this.state.childFriendly}</div>
                                 </div>
                                 <div>
                                 <a href={this.state.website} className='attractionLink' target="_blank" rel="noreferrer">Visit Website</a>
