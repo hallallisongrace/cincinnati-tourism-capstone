@@ -43,25 +43,25 @@ router.route('/add').post((req, res) => {
   const description = req.body.description
   const website = req.body.website
   const imageURL = req.body.imageURL
-  const address = req.body.location.address
-  const city = req.body.location.city
-  const state = req.body.location.state
-  const zipcode = req.body.location.zipcode
-  const indoors = req.body.indoors
-  const childFriendly = req.body.childFriendly
+//   const address = req.body.location.address
+//   const city = req.body.location.city
+//   const state = req.body.location.state
+//   const zipcode = req.body.location.zipcode
+//   const indoors = req.body.indoors
+//   const childFriendly = req.body.childFriendly
   const newAttraction = new Attraction ({
       name,
       description,
       website,
       imageURL,
-      location:{
-      address,
-      city,
-      state,
-      zipcode
-      },
-      indoors,
-      childFriendly,
+    //   location:{
+    //   address,
+    //   city,
+    //   state,
+    //   zipcode
+    //   },
+    //   indoors,
+    //   childFriendly,
       })
   newAttraction.save()
       .then(()=>{

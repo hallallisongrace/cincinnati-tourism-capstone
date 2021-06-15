@@ -4,7 +4,7 @@ import './home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // IMPORTS BELOW ARE FOR WEATHER APP 
 // import Weather from './app_component/weather.component'
-import 'weather-icons/css/weather-icons.css';
+// import 'weather-icons/css/weather-icons.css';
 // IMPORTS ABOVE ARE FOR WEATHER APP ^
 // for weather app
 // images below
