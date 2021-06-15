@@ -23,6 +23,7 @@ class Home extends React.Component{
       icon:undefined,
       main:undefined,
       celsius:undefined,
+      Fahrenheit:undefined,
       temp_max:undefined,
       temp_min:undefined,
       description:"",
@@ -43,8 +44,13 @@ class Home extends React.Component{
   
 
   calCelsius(temp){
-    let cell = Math.floor(temp- 273.15);
+    let cell = Math.floor(temp - 273.15);
     return cell;
+  }
+
+  calFahrenheit(temp2){
+    let far = Math.floor( (temp2 - 273.15) *1.8 + 32);
+    return far;
   }
 
   get_WeatherIcon(icons,rangeId){
@@ -87,7 +93,8 @@ class Home extends React.Component{
         city:response.name,
         country:response.sys.country,
         temp_celsius:this.calCelsius(response.main.temp),
-        temp_max:this.calCelsius(response.main.temp_max),
+        Fahrenheit:this.calFahrenheit(response.main.temp),
+        temp_max:this.calCelsius(response.main.temp),
         temp_min:this.calCelsius(response.main.temp_min),
         description:response.weather[0].description,
       })
@@ -106,7 +113,7 @@ class Home extends React.Component{
       </section>
       <section>
 
-        <Weather city={this.state.city} country={this.state.country} temp_celsius={this.state.temp_celsius} temp_min={this.state.temp_min} temp_max={this.state.temp_max} description={this.state.description} weatherIcon={this.state.icon} />      
+        <Weather city={this.state.city} country={this.state.country} temp_celsius={this.state.temp_celsius} Fahrenheit={this.state.Fahrenheit} temp_min={this.state.temp_min} temp_max={this.state.temp_max} description={this.state.description} weatherIcon={this.state.icon} />      
 
       </section>
     {/* IMAGES BELOW */}
@@ -159,8 +166,8 @@ class Home extends React.Component{
      
     </section>
     <section className="container-fluid text-light bg-dark p-5">
-      <h1 id="heading">THANK YOU! <br />FOR CHOOSING CINCY TRAVELS</h1>
-      <h6 style={{fontSize: 20,fontWeight:"bold", color: '#F9CC87 '}}> TRAVEL • EXPLORE • TOUR</h6>
+      <h1 id="heading">THANK YOU! <br />FOR CHOOSING <span style={{color:'#F9CC87'}}>CINCY TRAVELS</span></h1>
+      <h6 style={{fontSize: 20,fontWeight:"bold", color: '#F9CC87 '}}> TRAVEL • TOUR • EXPLORE</h6>
       <p id="para">Wherever you are, here at CINCY TRAVELS we are dedicated to showing you the sites of the <b>Cincinnati</b> Area</p>
     </section>
    

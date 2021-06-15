@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
      <Router>
       <div className="maincontainer">
-        {/* { <Burger/> }  */}
+        { <Burger/> }
 
         <Route exact path='/home' component={Home} />
         <Route exact path='/about' component={About} />
